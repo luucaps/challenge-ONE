@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    </header>
+
+    <main class="pagina">
+        <img class="logo" src="./img/Logo.png" alt="Logo">
+        <section class="pagina__inserir">
+                <input class="pagina__inserir__titulo" type="text" name="texto" placeholder="Digite seu texto">
+                <div class="pagina__inserir__botoes">
+                    <p class="pagina__inserir__botoes__texto">
+                        <img src="./img/Group.png" alt="Informação">
+                        Apenas letras minúsculas e sem acento.</p>
+                    <div class="pagina__inserir__botoes__estilo">
+                        <button class="pagina__inserir__botoes__estilo__sub" type="submit" onclick="botaoEncriptar()">Criptografar</button>
+                        <button class="pagina__inserir__botoes__estilo__sub" id="descripto" onclick="botaoDesencriptar()" type="submit">Descriptografar</button>
+                    </div>
+                </div>
+        </section>
+        <section class="pagina__resultado">
+            <img class="pagina__resultado__img" src="./img/imgResult.png" alt="Animação">
+            <div class="pagina__resultado__text">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <button class="pagina__resultado__botao__copiar" type="submit">Copiar</button>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="app.js" defer></script>
+</body>
+</html>
